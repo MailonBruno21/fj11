@@ -1,3 +1,4 @@
+
 public class TesteConta {
     public static void main(String [] args){
         Conta conta = new Conta();
@@ -12,7 +13,7 @@ public class TesteConta {
         System.out.println(conta.getTitular());
         System.out.println(conta.getNumeroConta());
         System.out.println(conta.getAgencia());
-        System.out.println(conta.getIdentficador());
+        System.out.println(conta.getIdentificadorConta());
         System.out.println(conta.getSaldo());
         System.out.println(conta.getDataAbertura());
     }
