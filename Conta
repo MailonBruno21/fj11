@@ -1,6 +1,8 @@
 
+
 public class Conta {
-    private static int identificador;
+    static int identificador;
+    private int identificadorConta;
     private String titular;
     private String agencia;
     private double saldo;
@@ -54,15 +56,21 @@ public class Conta {
     
     public Conta(){
         Conta.identificador += 1;
+        this.identificadorConta = Conta.identificador;
     }
     
     public Conta(String titular){
         this.titular = titular;
         Conta.identificador += 1;
+        this.identificadorConta = Conta.identificador;
     }
     
     public int getIdentficador(){
         return Conta.identificador;
+    }
+    
+    public int getIdentificadorConta(){
+        return this.identificadorConta;
     }
     
     public void setNumeroConta(int numero){
